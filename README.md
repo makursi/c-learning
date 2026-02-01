@@ -3,5 +3,3 @@
 # Keep studying hard!
 
 ![mushroom](./public/mushroom.webp)
-
-# test
