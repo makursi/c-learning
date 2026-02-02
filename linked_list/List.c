@@ -86,6 +86,16 @@ void deleteElem(SeqList *list, int l,ElemType *e){
 }
 
 
+int findElem(SeqList *list,ElemType e){
+    for(int i=0; i<list->length;i++){
+       
+      if(list->data[i] == e){
+        return i + 1;
+       }
+    }
+
+    return 0;
+}
 int main(){
   SeqList list;
   ElemType delnum;
