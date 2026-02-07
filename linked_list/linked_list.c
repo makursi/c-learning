@@ -29,14 +29,14 @@ struct Node* current = *head;
     current = current->next;
   }
 current->next = new_node;
-} 
+}
 
 
 //输出一个链表:从头到尾循环遍历一遍链表
 void print_node(struct Node* head){
- 
+
    struct Node* current = head;
-    
+
    while(current != NULL){
        printf("%d -> ",current->data);
        current = current->next;
@@ -50,7 +50,7 @@ void print_node(struct Node* head){
 void free_list(struct Node* head){
     struct Node* current;
     struct Node* next;
-    
+
      while(head != NULL){
          current = head;
          next = current->next;
@@ -65,9 +65,9 @@ int main(){
 
    //初始化空列表
  struct Node* head = NULL;
- 
+
 append(&head,10);
-append(&head,20); 
+append(&head,20);
 append(&head,30);
 
 //打印结果
